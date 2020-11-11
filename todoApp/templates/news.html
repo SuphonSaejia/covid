@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}To-Do App : News{% endblock %}
+{% block content %}
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <img src="{{all.articles.1.urlToImage}}"href="{{all.articles.1.url}}" class="d-block w-100" >
+              </div>
+              <div class="col">
+                <h2>{{all.articles.1.title}}</h2>
+                <br>
+                <h4>{{all.articles.1.description}}</h4>
+              </div>
+            </div>
+        </div>
+        <br>    
+    </li>
+
+    <li class="list-group-item">
+      <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="{{all.articles.2.urlToImage}}"class="d-block w-100">
+            </div>
+            <div class="col">
+              <h2>{{all.articles.2.title}}</h2>
+              <br>
+              <h4>{{all.articles.2.description}}</h4>
+            </div>
+          </div>
+      </div>
+      <br>    
+  </li>
+
+</ul>
+{% endblock %}
