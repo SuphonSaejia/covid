@@ -121,7 +121,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFLES_DIRS =[
+MEDIA_URL = '/images/'
+STATICFLES_DIRS = [
     os.path.join(BASE_DIR,"static"),
-    '/var/www/static/',
+    
 ]

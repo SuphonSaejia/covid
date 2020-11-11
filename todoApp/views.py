@@ -26,7 +26,7 @@ def contact(request):
     return render(request, 'contact.html', {"all" : today,"all2" : Sum})
 def news(request):
     News=(requests.get('http://newsapi.org/v2/top-headlines?country=th&apiKey=a70d4f9ca8894cf09976575575426bcb')).json()
-
+    
     return render(request, 'news.html',{"all": News})    
 def delete(request, itemID):
     item = List.objects.get(pk=itemID)
