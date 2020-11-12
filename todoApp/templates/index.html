@@ -1,29 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Covid-19 : Home{% endblock %}
-
+{% block title %}รายงานสถานการณ์{% endblock %}
 {% block content %}
-<br>
 <br>
 <br>
 <br>
 <div class="container">
     <div class="row">
       <div class="col">
-        <img src="../static/images/Virus2.png" class="d-block w-100" >
-        
+        <img src="../../static/images/Virus.png" class="d-block w-100" >
       </div>
       <div class="col">
         <div class="row">
             <div class="col">
-              <h3 style="color:black;">รายงานสถานการณ์ โควิด-19</h3>
-              <h4 >อัพเดทข้อมูลล่าสุด : {{all.UpdateDate}}</h4>
+              <h3 style="color:rgb(255, 255, 255);">รายงานสถานการณ์ โควิด-19</h3>
+              <h4 style="color:rgb(255, 255, 255);">อัพเดทข้อมูลล่าสุด : {{all.UpdateDate}}</h4>
+              <br>
                 <center>
                 <div class="alert rounded-lg" style="background-color:#F282A7;" role="alert">
                     
-                    <div class="textC"><h5>ติดเชื้อสะสม</h5></div>
-                    <div class="textC"><h2>{{all.Confirmed}}</h2></div>
-                    <div class="textC"><h5>[+{{all.NewConfirmed}}]</h5></div>
+                    <div class="textC"><h5 style="color:rgb(0, 0, 0);">ติดเชื้อสะสม</h5></div>
+                    <div class="textC"><h2 style="color:rgb(0, 0, 0);">{{all.Confirmed}}</h2></div>
+                    <div class="textC"><h5 style="color:rgb(0, 0, 0);">[+{{all.NewConfirmed}}]</h5></div>
                   </div>
                 </center> 
             </div>
@@ -32,27 +30,27 @@
             <div class="col">
                 <center>
                 <div class="alert rounded-lg" style="background-color:#587E5C;" role="alert">
-                    <div class="textC"><h6 >หายแล้ว</h6></div>
-                    <div class="textC"><h2 >{{all.Recovered}}</h2></div>
-                    <div class="textC"><h6 >[+{{all.NewRecovered}}]</h6></div>
+                    <div class="textC"><h6 style="color:rgb(0, 0, 0);">หายแล้ว</h6></div>
+                    <div class="textC"><h2 style="color:rgb(0, 0, 0);">{{all.Recovered}}</h2></div>
+                    <div class="textC"><h6 style="color:rgb(0, 0, 0);">[+{{all.NewRecovered}}]</h6></div>
                   </div>
                 </center>  
             </div>
             <div class="col">
                 <center>
                 <div class="alert rounded-lg" style="background-color:#FAC240;" role="alert">
-                    <div class="textC"><h6>รักษาอยู่ใน รพ.</h6></div>
-                    <div class="textC"><h2>{{all.Hospitalized}}</h2></div>
-                    <div class="textC"><h6>[{{all.NewHospitalized}}]</h6></div>
+                    <div class="textC"><h6 style="color:rgb(0, 0, 0);">รักษาอยู่ใน รพ.</h6></div>
+                    <div class="textC"><h2 style="color:rgb(0, 0, 0);">{{all.Hospitalized}}</h2></div>
+                    <div class="textC"><h6 style="color:rgb(0, 0, 0);">[{{all.NewHospitalized}}]</h6></div>
                   </div>
                 </center>  
             </div>
             <div class="col">
                 <center>
                 <div class="alert rounded-lg" style="background-color:#BD523F;" role="alert">
-                    <div class="textC"><h6>เสียชีวิต</h6></div>
-                    <div class="textC"><h2>{{all.Deaths}}</h2></div>
-                    <div class="textC"><h6>[+{{all.NewDeaths}}]</h6></div>
+                    <div class="textC"><h6 style="color:rgb(0, 0, 0);">เสียชีวิต</h6></div>
+                    <div class="textC"><h2 style="color:rgb(0, 0, 0);">{{all.Deaths}}</h2></div>
+                    <div class="textC"><h6 style="color:rgb(0, 0, 0);">[+{{all.NewDeaths}}]</h6></div>
                   </div>
                 </center>  
             </div>
