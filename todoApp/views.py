@@ -18,6 +18,8 @@ def index(request):
     
 def about(request):
     return render(request, 'about.html')
+
+    
 def contact(request):
     today=(requests.get('https://covid19.th-stat.com/api/open/today')).json()
     Sum=(requests.get('https://covid19.th-stat.com/api/open/cases/sum')).json()
