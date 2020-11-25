@@ -25,7 +25,21 @@
               ]);
       
               var options = {
-                title: 'สถิติผู้ติดเชื้อแบ่งตามเพศ'
+                title: 'สถิติผู้ติดเชื้อแบ่งตามเพศ',
+                backgroundColor: 'rgb(33, 35, 36)',
+                titleTextStyle:{
+                  color:'rgb(255, 255, 255)',
+                  fontName:'Mali',
+                  fontSize: 18,
+                  bold: true
+                },
+                legendTextStyle:{
+                  color:'rgb(255, 255, 255)',
+                  fontName:'Mali',
+                  fontSize: 18,
+                  bold: true
+                }
+
               };
       
               var chart = new google.visualization.PieChart(document.getElementById('piechart'));
